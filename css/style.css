@@ -52,6 +52,10 @@ header img {
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
   color: white;
   box-shadow: 2px 4px 1px #c2c2c2;
+  cursor: pointer;
+}
+.présentation .bouton:hover {
+  background: linear-gradient(175deg, #ff93e1 10%, #a16be0 90%);
 }
 
 .fonction {
@@ -90,6 +94,12 @@ header img {
   flex-direction: column;
   gap: 30px;
   margin: 30px;
+}
+.fonctionnement .fonction:hover {
+  background-color: #ece1f9;
+}
+.fonctionnement .fonction:hover .fas {
+  color: #9356DC;
 }
 
 body {

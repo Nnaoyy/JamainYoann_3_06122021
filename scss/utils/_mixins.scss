@@ -4,4 +4,8 @@
     background:linear-gradient(175deg,$couleur_secondaire 10%, $couleur_primaire 90%);
     color: white;
     box-shadow: 2px 4px 1px rgb(194, 194, 194);
+    cursor: pointer;
+    &:hover{
+        background:linear-gradient(175deg,lighten($couleur_secondaire,5) 10%, lighten($couleur_primaire,5) 90%);
+    }
 }

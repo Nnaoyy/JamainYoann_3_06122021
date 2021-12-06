@@ -39,6 +39,7 @@
         
     }
     .bouton{
-        @include bouton
+        @include bouton;
+        
     }
 }

@@ -35,4 +35,10 @@
     flex-direction: column;
     gap: 30px;
     margin: 30px;
+    .fonction:hover{
+        background-color: #ece1f9;
+        .fas{
+            color:$couleur_primaire;
+        }
+    }
 }
