@@ -11,16 +11,24 @@ header img {
 .ville {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #e6e6e6;
-  padding: 10px 0;
+  padding: 20px 0;
   border-top: 2px solid #bdbcbc;
+  font-size: 1.2em;
 }
 .ville input {
   border: none;
   background-color: inherit;
-  padding-left: 10px;
   font-weight: bold;
-  color: black;
+  font-size: inherit;
+  margin-left: 10px;
+}
+.ville input:focus {
+  outline: none;
+}
+.ville input::placeholder {
+  text-align: center;
 }
 
 .présentation {
@@ -28,7 +36,7 @@ header img {
   flex-direction: column;
   align-items: center;
   background-color: #f7f5f5;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   font-size: 1.5em;
   text-align: center;
 }
