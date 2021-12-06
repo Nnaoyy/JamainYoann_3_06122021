@@ -1,5 +1,14 @@
+
+
 @import "utils/variables";
 @import "utils/mixins";
 @import "partials/_header.scss";
 @import "partials/recherche";
+@import "partials/fonctionnement";
 
+body{
+    font-family: Roboto, sans-serif;
+    h1{
+        font-family: Shrikhand, cursive;
+    }
+}

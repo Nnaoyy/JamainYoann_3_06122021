@@ -40,7 +40,7 @@ header img {
   font-size: 1.5em;
   text-align: center;
 }
-.présentation h1 {
+.présentation h2 {
   font-weight: 1000;
 }
 .présentation p {
@@ -52,6 +52,51 @@ header img {
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
   color: white;
   box-shadow: 2px 4px 1px #c2c2c2;
+}
+
+.fonction {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 10px 0;
+  width: auto;
+  max-width: 500px;
+  gap: 30px;
+  background-color: #f7f5f5;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.fonction span {
+  display: flex;
+  border-radius: 50px;
+  background-color: #9356DC;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: -15px;
+  width: 25px;
+  height: 25px;
+}
+.fonction .fas {
+  color: grey;
+  font-size: 120%;
+}
+.fonction p {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+body h1 {
+  font-family: Shrikhand, cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

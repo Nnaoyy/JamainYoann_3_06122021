@@ -1,0 +1,38 @@
+.fonction{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px 0;
+    width:auto;
+    max-width: 500px;
+    gap: 30px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: 2px 2px 2px lightgray;
+    span{
+        display: flex;
+        border-radius: 50px;
+        background-color:$couleur_primaire ;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: -15px;
+        width: 25px;
+        height: 25px;
+    }
+    .fas{
+        color: grey;
+        
+        font-size: 120%;
+    }
+    p{
+        padding: 0 10px;
+        font-weight: bold;
+    }
+    
+}
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px;
+}
