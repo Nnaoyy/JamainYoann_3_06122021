@@ -1,0 +1,19 @@
+{
+  "name": "jamain_yoann_p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nnaoyy/JamainYoann_3_06122021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nnaoyy/JamainYoann_3_06122021/issues"
+  },
+  "homepage": "https://github.com/Nnaoyy/JamainYoann_3_06122021#readme"
+}

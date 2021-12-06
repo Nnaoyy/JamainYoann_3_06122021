@@ -1,0 +1,49 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+header img {
+  width: 250px;
+}
+
+.ville {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 10px 0;
+  border-top: 2px solid #bdbcbc;
+}
+.ville input {
+  border: none;
+  background-color: inherit;
+  padding-left: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.présentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f5f5;
+  padding-bottom: 30px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.présentation h1 {
+  font-weight: 1000;
+}
+.présentation p {
+  font-weight: lighter;
+}
+.présentation .bouton {
+  padding: 20px;
+  border-radius: 60px;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  color: white;
+  box-shadow: 2px 4px 1px #c2c2c2;
+}
+
+/*# sourceMappingURL=style.css.map */
