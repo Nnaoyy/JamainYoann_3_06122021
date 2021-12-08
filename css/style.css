@@ -10,10 +10,17 @@
 header {
   display: flex;
   justify-content: center;
-  padding: 30px;
 }
-header img {
-  width: 250px;
+header h1 {
+  font-size: 2.5em;
+}
+header a {
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  font-size: 120%;
+  color: black;
 }
 
 .ville {
@@ -124,7 +131,7 @@ header img {
   gap: 25px;
 }
 
-.menu {
+.menu_carte {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -134,7 +141,7 @@ header img {
   height: 300px;
   box-shadow: 2px 2px 2px lightgray;
 }
-.menu .photo {
+.menu_carte .photo {
   display: block;
   overflow: hidden;
   width: 400px;
@@ -144,15 +151,15 @@ header img {
   border-top-right-radius: 20px;
   object-position: 0 -60px;
 }
-.menu .photo2 {
+.menu_carte .photo2 {
   height: 210px;
   margin-bottom: 20px;
   object-position: 0 -180px;
 }
-.menu .image {
+.menu_carte .image {
   position: relative;
 }
-.menu .image .nouveau {
+.menu_carte .image .nouveau {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -164,20 +171,20 @@ header img {
   background-color: #99E2D0;
   border-radius: 5px;
 }
-.menu h5 {
+.menu_carte h5 {
   font-size: 1.3em;
   margin: 0;
   margin-left: 10px;
 }
-.menu p {
+.menu_carte p {
   margin: 3px 10px;
   font-size: 1.1em;
 }
-.menu .lien {
+.menu_carte .lien {
   text-decoration: none;
   color: black;
 }
-.menu .far {
+.menu_carte .far {
   position: absolute;
   bottom: 10%;
   right: 8%;
@@ -185,11 +192,11 @@ header img {
   color: black;
   z-index: 2;
 }
-.menu .far:active + .fas {
+.menu_carte .far:active + .fas {
   opacity: 1;
   animation: coeur 1s forwards;
 }
-.menu .fas {
+.menu_carte .fas {
   position: absolute;
   bottom: 10%;
   right: 8%;
@@ -229,6 +236,15 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu .photo_menu {
+  width: 600px;
+  overflow: hidden;
 }
 
 body {
