@@ -102,6 +102,81 @@ header img {
   color: #9356DC;
 }
 
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f5f5;
+  padding-bottom: 60px;
+}
+
+.liste_restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  width: 400px;
+  height: 300px;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.menu .photo {
+  display: block;
+  overflow: hidden;
+  width: 400px;
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-position: 0 -60px;
+}
+.menu .photo2 {
+  height: 210px;
+  margin-bottom: 20px;
+  object-position: 0 -180px;
+}
+.menu .image {
+  position: relative;
+}
+.menu .image .nouveau {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: #278870;
+  background-color: #99E2D0;
+  border-radius: 5px;
+}
+.menu h5 {
+  font-size: 1.3em;
+  margin: 0;
+  margin-left: 10px;
+}
+.menu p {
+  margin: 3px 10px;
+  font-size: 1.1em;
+}
+
+.texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.texte .fa-heart {
+  font-size: 200%;
+  margin-right: 25px;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
