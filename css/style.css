@@ -199,10 +199,42 @@ header img {
   opacity: 0;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  position: relative;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+footer h3 {
+  padding: 20px 0 0 20px;
+  font-weight: normal;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  margin: 5px;
+}
+footer li .fas {
+  padding-right: 10px;
+  width: 20px;
+  height: auto;
+  font-size: 80%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
-body h1 {
+body h1, body h3 {
   font-family: Shrikhand, cursive;
 }
 
