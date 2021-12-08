@@ -238,13 +238,51 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.photo_menu {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
+  background-color: #f7f5f5;
 }
-.menu .photo_menu {
-  width: 600px;
-  overflow: hidden;
+.menu .titre {
+  background-color: #f7f5f5;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-top: -60px;
+}
+
+.entrées {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.plat h5 {
+  font-size: 1.3em;
+  margin: 10px 0 3px 10px;
+}
+.plat div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.plat div span {
+  font-weight: bold;
 }
 
 body {
