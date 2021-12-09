@@ -12,3 +12,19 @@
     }
     
 }
+
+@keyframes choix {
+    0% {
+      
+      width: 30px;
+    }
+    50%{
+        color: white;
+        width: 70px;
+    }
+    100% {
+        color: white;
+      width: 150px;
+    }
+  }
+
