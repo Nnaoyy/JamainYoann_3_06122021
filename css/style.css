@@ -233,6 +233,7 @@ footer h3 {
 }
 footer ul {
   list-style: none;
+  padding-left: 20px;
 }
 footer li {
   margin: 5px;
@@ -264,19 +265,69 @@ footer a:hover {
   background-color: #f7f5f5;
 }
 .menu .titre {
+  position: relative;
   background-color: #f7f5f5;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   margin-top: -60px;
+  padding-left: 20px;
+}
+.menu .titre .far {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  font-size: 200%;
+  color: black;
+  z-index: 2;
+  bottom: 30%;
+}
+.menu .titre .far:active + .fas {
+  opacity: 1;
+  animation: coeur 1s forwards;
+}
+.menu .titre .fas {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  font-size: 200%;
+  color: #9356DC;
+  z-index: 1;
+  opacity: 0;
+  bottom: 30%;
+}
+.menu h2 {
+  font-weight: normal;
+}
+.menu h2 span {
+  border-bottom: 4px solid #99E2D0;
+}
+.menu .commande {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.menu .commande .bouton {
+  padding: 20px;
+  border-radius: 60px;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  color: white;
+  box-shadow: 2px 4px 1px #c2c2c2;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.menu .commande .bouton:hover {
+  background: linear-gradient(175deg, #ff93e1 10%, #a16be0 90%);
 }
 
-.entrées {
+.entrées, .plats, .desserts {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   margin: 10px;
 }
-.entrées p, .entrées h5 {
+.entrées p, .entrées h5, .plats p, .plats h5, .desserts p, .desserts h5 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

@@ -68,28 +68,10 @@
         color:black;
     }
     .far{
-        position: absolute;
-        bottom: 10%;
-        right: 8%;
-        font-size: 200%;
-        color:black;
-        z-index: 2;
-        &:active + .fas{
-            opacity:1;
-            animation: coeur 1s forwards;
-
-        }
+        @include coeurvide;
     }
     .fas{
-        position: absolute;
-        bottom: 10%;
-        right: 8%;
-        font-size: 200%;
-        color:$couleur_primaire;
-        z-index: 1;
-        opacity:0;
-        
-        
+        @include coeurplein;  
     }
     
     

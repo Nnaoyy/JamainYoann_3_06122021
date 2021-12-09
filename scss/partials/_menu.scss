@@ -11,17 +11,45 @@
     background-color: rgb(247, 245, 245);
   
     .titre{
+        position: relative;
         background-color: rgb(247, 245, 245);
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
         margin-top: -60px;
+        padding-left: 20px;
+        .far{
+            @include coeurvide;
+            bottom: 30%;
+        }
+        .fas{
+            @include coeurplein; 
+            bottom: 30%; 
+        }
     }
+    h2{
+        font-weight: normal;
+        span{
+        border-bottom: 4px solid $couleur_tertiaire;
+        }
+    }
+    .commande{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+   
+        .bouton{
+             @include bouton;
+             width: 300px;
+             text-align: center;
+             font-size: 1.5em;
+    }
+ }
 }
 
-.entrées{
+.entrées,.plats,.desserts{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin: 10px;
     p,h5{
     overflow: hidden;
