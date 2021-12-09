@@ -11,13 +11,27 @@
   0% {
     width: 30px;
   }
-  50% {
-    color: white;
-    width: 70px;
-  }
   100% {
     color: white;
     width: 150px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes transition_menu {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 header {
@@ -333,6 +347,17 @@ footer a:hover {
   text-overflow: ellipsis;
   width: auto;
 }
+.entrées .plat_1, .plats .plat_1, .desserts .plat_1 {
+  animation: transition_menu 1s ease-out both;
+}
+.entrées .plat_2, .plats .plat_2, .desserts .plat_2 {
+  animation: transition_menu 1s ease-out both;
+  animation-delay: 0.2s;
+}
+.entrées .plat_3, .plats .plat_3, .desserts .plat_3 {
+  animation: transition_menu 1s ease-out both;
+  animation-delay: 0.4s;
+}
 
 .menu_choix {
   box-sizing: border-box;
@@ -364,7 +389,7 @@ footer a:hover {
   margin-left: auto;
   padding: 8px 20px;
 }
-.menu_choix .fas {
+.menu_choix .validation {
   border-radius: 0px 15px 15px 0px;
   right: -7px;
   height: 86px;
@@ -374,16 +399,19 @@ footer a:hover {
 .menu_choix input {
   display: none;
 }
-.menu_choix input:checked + .fas {
+.menu_choix input:checked + .validation {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 10px;
   border-radius: 0px 12px 12px 0px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   transition-duration: 1s;
-  animation: choix 0.8 ease-out both;
+  animation: choix 0.8s ease-in-out both;
+}
+.menu_choix input:checked + .validation .fas {
+  animation: rotation 1s ease-in-out both;
 }
 
 body {

@@ -57,6 +57,17 @@
     text-overflow: ellipsis;
     width: auto;
     }
+    .plat_1{
+        animation: transition_menu 1s ease-out both;
+    }
+    .plat_2{
+        animation: transition_menu 1s ease-out both;
+        animation-delay: 0.2s;
+    }
+    .plat_3{
+        animation: transition_menu 1s ease-out both;
+        animation-delay: 0.4s;
+    }
 }
 
 .menu_choix{
@@ -88,7 +99,7 @@
     margin-left: auto;
     padding: 8px 20px;
     }
-    .fas {
+    .validation {
     border-radius: 0px 15px 15px 0px;
     right: -7px;
     height: 86px;
@@ -98,18 +109,24 @@
     input{
         display: none;
     }
-    input:checked + .fas {
+     
+    input:checked + .validation {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 10px;
     border-radius: 0px 12px 12px 0px;
-    background-color: #99e2d0;
+    background-color: $couleur_tertiaire;
     transition-duration: 1s;
-    animation: choix 0.8 ease-out both;
+    animation: choix 0.8s ease-in-out both;
+    .fas{
+        animation: rotation 1s ease-in-out both;
+    }
+
+    }
     
-}
+    
 }
 
 
