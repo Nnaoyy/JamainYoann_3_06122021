@@ -473,6 +473,33 @@ footer a:hover {
   animation: rotation 1s ease-in-out both;
 }
 
+@media all and (min-width: 820px) {
+  .fonctionnement {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fonctionnement .fonction {
+    width: 800px;
+  }
+
+  .liste_restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media all and (min-width: 1315px) {
+  .liste_menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 body {
   font-family: Roboto, sans-serif;
 }
