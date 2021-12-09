@@ -1,10 +1,8 @@
 @keyframes coeur {
     0%{
-        transform: scale(0.1);
-        
+        transform: scale(0.1);   
     }
-    100%{
-        
+    100%{ 
         transform: scale(1);
     }
     
@@ -12,14 +10,11 @@
 
 @keyframes choix {
     0% {
-      
       width: 30px;
     }
-    
     100% {
     color: white;
-      width: 150px;
-      
+      width: 150px;     
     }
   }
 @keyframes rotation{
@@ -41,4 +36,32 @@
         opacity: 1;
       }
     
+}
+
+@keyframes chargement{
+  0%{
+      transform: rotate(0deg);
+  }
+  99.9%{
+    transform: rotate(720deg);
+    opacity:1;
+  }
+  100%{
+      
+      opacity:0;
+      transform:translatex(-1000px);
+  }
+}
+@keyframes disparition{
+  0%{
+    opacity:1
+  }
+  99.9%{
+    transform:translatex(0);
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    transform:translatex(-1000px);
+  }
 }
