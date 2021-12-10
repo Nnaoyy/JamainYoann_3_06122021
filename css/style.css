@@ -515,7 +515,14 @@ footer a:hover {
     width: 33%;
   }
 }
+html {
+  font-size: 100%;
+}
+
 body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
   font-family: Roboto, sans-serif;
 }
 body h1, body h3 {
