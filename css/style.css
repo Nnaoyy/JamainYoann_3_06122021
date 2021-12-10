@@ -529,4 +529,9 @@ body h1, body h3 {
   font-family: Shrikhand, cursive;
 }
 
+.accueil {
+  width: 100%;
+  min-height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */
