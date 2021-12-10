@@ -377,6 +377,9 @@ footer a:hover {
   z-index: 1;
   opacity: 0;
 }
+.menu .titre h1 {
+  font-size: 160%;
+}
 .menu h2 {
   font-weight: normal;
 }
@@ -408,12 +411,6 @@ footer a:hover {
   flex-direction: column;
   gap: 10px;
   margin: 10px;
-}
-.entrées p, .entrées h5, .plats p, .plats h5, .desserts p, .desserts h5 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: auto;
 }
 .entrées .plat_1, .plats .plat_1, .desserts .plat_1 {
   width: 100%;
@@ -459,6 +456,11 @@ footer a:hover {
 .menu_choix .entrée_titre span:first-child {
   font-size: 1.3em;
   font-weight: bold;
+}
+.menu_choix .entrée_titre span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu_choix .prix {
   font-weight: 600;

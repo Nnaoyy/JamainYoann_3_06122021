@@ -25,6 +25,9 @@
             @include coeurplein; 
              
         }
+        h1{
+            font-size: 160%;
+        }
     }
     h2{
         font-weight: normal;
@@ -53,12 +56,6 @@
     margin: 10px;
     
     
-    p,h5{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: auto;
-    }
     .plat_1{
         width: 100%;
         animation: transition_menu 1s ease-out both;
@@ -101,8 +98,12 @@
         margin: 10px 0;
        span:first-child{
         font-size: 1.3em;
-        font-weight: bold;
-         
+        font-weight: bold;  
+        }
+        span{
+            overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         }
     }
     .prix{
