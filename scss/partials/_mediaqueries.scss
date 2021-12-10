@@ -26,5 +26,8 @@
     .liste_menu{
         display: flex;
         justify-content: space-around;
+        .entrées,.plats,.desserts{
+            width: 33%;
+        }
     }
 }

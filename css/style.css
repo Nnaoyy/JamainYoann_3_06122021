@@ -266,26 +266,39 @@ header a {
   text-decoration: none;
   color: black;
 }
-.menu_carte .far {
+
+.restau_choix {
+  box-sizing: border-box;
+  display: flex;
   position: absolute;
   bottom: 10%;
   right: 8%;
+  justify-content: space-between;
+}
+.restau_choix span {
+  position: relative;
+}
+.restau_choix .far {
+  box-sizing: border-box;
+  position: relative;
   font-size: 200%;
   color: black;
   z-index: 2;
 }
-.menu_carte .far:active + .fas {
-  opacity: 1;
-  animation: coeur 1s forwards;
-}
-.menu_carte .fas {
+.restau_choix .fas {
   position: absolute;
-  bottom: 10%;
-  right: 8%;
+  left: 0%;
   font-size: 200%;
   color: #9356DC;
   z-index: 1;
   opacity: 0;
+}
+.restau_choix input {
+  display: none;
+}
+.restau_choix input:checked + .fas {
+  opacity: 1;
+  animation: coeur 1s forwards;
 }
 
 footer {
@@ -342,27 +355,19 @@ footer a:hover {
   padding-left: 20px;
 }
 .menu .titre .far {
-  position: absolute;
-  bottom: 10%;
-  right: 8%;
+  position: relative;
   font-size: 200%;
   color: black;
   z-index: 2;
-  bottom: 30%;
-}
-.menu .titre .far:active + .fas {
-  opacity: 1;
-  animation: coeur 1s forwards;
+  margin-bottom: 20px;
 }
 .menu .titre .fas {
   position: absolute;
-  bottom: 10%;
-  right: 8%;
+  left: 0%;
   font-size: 200%;
   color: #9356DC;
   z-index: 1;
   opacity: 0;
-  bottom: 30%;
 }
 .menu h2 {
   font-weight: normal;
@@ -403,17 +408,21 @@ footer a:hover {
   width: auto;
 }
 .entrées .plat_1, .plats .plat_1, .desserts .plat_1 {
+  width: 100%;
   animation: transition_menu 1s ease-out both;
 }
 .entrées .plat_2, .plats .plat_2, .desserts .plat_2 {
+  width: 100%;
   animation: transition_menu 1s ease-out both;
   animation-delay: 0.2s;
 }
 .entrées .plat_3, .plats .plat_3, .desserts .plat_3 {
+  width: 100%;
   animation: transition_menu 1s ease-out both;
   animation-delay: 0.4s;
 }
 .entrées .plat_4, .plats .plat_4, .desserts .plat_4 {
+  width: 100%;
   animation: transition_menu 1s ease-out both;
   animation-delay: 0.6s;
 }
@@ -501,6 +510,9 @@ footer a:hover {
   .liste_menu {
     display: flex;
     justify-content: space-around;
+  }
+  .liste_menu .entrées, .liste_menu .plats, .liste_menu .desserts {
+    width: 33%;
   }
 }
 body {

@@ -67,12 +67,44 @@
         text-decoration: none;
         color:black;
     }
+    
+    
+    
+}
+
+.restau_choix{
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    
+    justify-content: space-between; 
+    
+    
+    span{
+        position: relative;
+    }
     .far{
-        @include coeurvide;
+        box-sizing: border-box;
+        position: relative;
+        font-size: 200%;
+        color:black;
+        z-index: 2;
     }
     .fas{
-        @include coeurplein;  
+        position: absolute;
+        left: 0%;
+        font-size: 200%;
+        color:$couleur_primaire;
+        z-index: 1;
+        opacity:0;  
     }
-    
-    
+    input{
+        display: none;
+    }
+    input:checked +.fas{
+        opacity:1;
+        animation: coeur 1s forwards;
+    }
 }
