@@ -219,22 +219,22 @@ header a {
   background-color: white;
   border-radius: 20px;
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   box-shadow: 2px 2px 2px lightgray;
 }
 .menu_carte .photo {
   display: block;
   overflow: hidden;
-  width: 400px;
-  height: 230px;
+  width: 350px;
+  height: 180px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-position: 0 -60px;
 }
 .menu_carte .photo2 {
-  height: 210px;
+  height: 170px;
   margin-bottom: 20px;
   object-position: 0 -180px;
 }
