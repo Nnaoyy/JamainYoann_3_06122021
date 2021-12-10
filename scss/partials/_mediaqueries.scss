@@ -1,4 +1,4 @@
-@media all and (min-width:820px){
+@media screen and (min-width:820px){
 
     .fonctionnement{
         flex-direction: row;
@@ -22,7 +22,7 @@
     }
 
 }
-@media all and (min-width: 1315px){
+@media screen and (min-width: 1315px){
     .liste_menu{
         display: flex;
         justify-content: space-around;
