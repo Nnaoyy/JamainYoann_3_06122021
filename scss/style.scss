@@ -11,8 +11,13 @@
 @import "partials/footer";
 @import "partials/menu";
 @import "partials/mediaqueries";
-
+html{
+    font-size: 100%;
+}
 body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
     font-family: Roboto, sans-serif;
     h1,h3{
         font-family: Shrikhand, cursive;
