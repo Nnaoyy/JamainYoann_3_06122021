@@ -114,8 +114,7 @@
     }
     input{
         display: none;
-    }
-     
+    }     
     input:checked + .validation {
     display: flex;
     justify-content: center;
@@ -128,11 +127,8 @@
     animation: choix 0.8s ease-in-out both;
     .fas{
         animation: rotation 1s ease-in-out both;
-    }
-
-    }
-    
-    
+        }
+    }    
 }
 
 

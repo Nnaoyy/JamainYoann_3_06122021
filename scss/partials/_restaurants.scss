@@ -39,11 +39,8 @@
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        object-position: 100%;
-        
-        }
-        
-    
+        object-position: 100%;       
+        }    
     .image{
         position: relative;
         .nouveau{
@@ -58,8 +55,7 @@
         background-color: $couleur_tertiaire;
         border-radius: 5px;
         }
-    }
-    
+    }   
     h5{
         font-size: 1.3em;
         margin: 0;
@@ -72,10 +68,7 @@
     .lien{
         text-decoration: none;
         color:black;
-    }
-    
-    
-    
+    }   
 }
 
 .restau_choix{
@@ -83,11 +76,8 @@
     display: flex;
     position: absolute;
     bottom: 10%;
-    right: 8%;
-    
+    right: 8%;  
     justify-content: space-between; 
-    
-    
     span{
         position: relative;
     }

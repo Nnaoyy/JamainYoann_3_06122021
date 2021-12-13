@@ -5,9 +5,7 @@
         justify-content: space-around;
         .fonction{
             width: 800px;
-        }
-        
-        
+        }   
     }
 
     .liste_restaurants{
@@ -21,11 +19,10 @@
         justify-content: space-around;
     }
     .menu_carte{
-        width: 40%;
-        
+        width: 40%;    
     }
-
 }
+
 @media screen and (min-width: 1315px){
     .liste_menu{
         display: flex;
