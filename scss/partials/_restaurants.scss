@@ -1,7 +1,7 @@
 .restaurants{
     display: flex;
     flex-direction: column;
-    background-color: rgb(247, 245, 245);
+    background-color: $couleur_fond;
     padding: 5px;
     padding-bottom: 60px;
     h2{
