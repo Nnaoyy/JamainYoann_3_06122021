@@ -20,6 +20,10 @@
         display: flex;
         justify-content: space-around;
     }
+    .menu_carte{
+        width: 40%;
+        
+    }
 
 }
 @media screen and (min-width: 1315px){
@@ -29,5 +33,12 @@
         .entrées,.plats,.desserts{
             width: 33%;
         }
+    }
+    .menu_carte{
+        width: 20%;
+    }
+    .liste_restaurants{
+        justify-content: space-around;
+        gap: 0;
     }
 }

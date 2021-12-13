@@ -7,6 +7,7 @@
     cursor: pointer;
     &:hover{
         background:linear-gradient(175deg,lighten($couleur_secondaire,5) 10%, lighten($couleur_primaire,5) 90%);
+        box-shadow: 1px 10px 1px rgb(167, 166, 166);
     }
 }
 

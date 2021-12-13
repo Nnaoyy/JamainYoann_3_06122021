@@ -1,3 +1,8 @@
+.recherche{
+    margin: 2px;
+
+}
+
 .ville{
     display: flex;
     justify-content: center;
@@ -6,13 +11,14 @@
     padding: 20px 0;
     border-top:2px solid rgb(189, 188, 188) ;
     font-size: 1.2em;
+    width: auto;
     
     input{
         border: none;
         background-color: inherit;
         font-weight: bold;  
         font-size: inherit;
-        margin-left: 10px;
+        margin-left: 5px;
         &:focus{
             outline: none;
         }
