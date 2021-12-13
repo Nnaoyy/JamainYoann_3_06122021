@@ -26,7 +26,7 @@
     z-index: 1;
     opacity:0;
 }
-@mixin menu($time:0){
+@mixin menu($time:0s){
     display: flex;
     flex-direction: column;
     gap: 10px;

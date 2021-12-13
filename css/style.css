@@ -424,7 +424,7 @@ footer a:hover {
 .liste_menu .entrées .plat_1 {
   width: 100%;
   animation: transition_menu 1s ease-out both;
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 .liste_menu .entrées .plat_2 {
   width: 100%;
