@@ -91,18 +91,10 @@
     }
     .far{
         box-sizing: border-box;
-        position: relative;
-        font-size: 200%;
-        color:black;
-        z-index: 2;
+        @include coeurvide;
     }
     .fas{
-        position: absolute;
-        left: 0%;
-        font-size: 200%;
-        color:$couleur_primaire;
-        z-index: 1;
-        opacity:0;  
+        @include coeurplein; 
     }
     input{
         display: none;

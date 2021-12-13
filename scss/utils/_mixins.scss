@@ -12,17 +12,42 @@
 
 @mixin coeurvide{
     position: relative;
-        font-size: 200%;
-        color:black;
-        z-index: 2;
+    font-size: 200%;
+    color:black;
+    z-index: 2;
        
 }
 @mixin coeurplein{
     position: absolute;
-        
-        left: 0%;
-        font-size: 200%;
-        color:$couleur_primaire;
-        z-index: 1;
-        opacity:0;
+    left: 0%;
+    font-size: 200%;
+    color:$couleur_secondaire;
+    z-index: 1;
+    opacity:0;
+}
+@mixin menu($time:0){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px; 
+    .plat_1{
+        width: 100%;
+        animation: transition_menu 1s ease-out both;
+        animation-delay: $time;
+    }
+    .plat_2{
+        width: 100%;
+        animation: transition_menu 1s ease-out both;
+        animation-delay: 0.1s+$time;
+    }
+    .plat_3{
+        width: 100%;
+        animation: transition_menu 1s ease-out both;
+        animation-delay: 0.2s+$time;
+    }
+    .plat_4{
+        width: 100%;
+        animation: transition_menu 1s ease-out both;
+        animation-delay: 0.3s+$time;
+    }
 }
