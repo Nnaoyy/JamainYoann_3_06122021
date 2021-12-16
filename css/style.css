@@ -78,6 +78,8 @@
 }
 
 .chargement {
+  position: absolute;
+  /*j'avais oublié la position:absolute donc les choix de left et top n'était pas bien pris en compte*/
   left: 50%;
   top: 50vh;
   z-index: 4;
@@ -168,7 +170,7 @@ header a {
   align-items: center;
   border-radius: 25px;
   padding: 10px 0;
-  width: auto;
+  width: 100%;
   max-width: 500px;
   gap: 30px;
   background-color: #f7f5f5;
@@ -199,6 +201,8 @@ header a {
   flex-direction: column;
   gap: 30px;
   margin: 30px;
+  align-items: center;
+  /*Pour aligner au milieu et donc garder les marges*/
 }
 .fonctionnement .fonction:hover {
   background-color: #ece1f9;
@@ -208,18 +212,18 @@ header a {
 }
 
 .fonction_titre {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   background-color: #f7f5f5;
-  padding: 5px;
+  padding: 10px;
   padding-bottom: 60px;
 }
 .restaurants h2 {
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .liste_restaurants {
